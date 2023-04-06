@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------HEADER-----------*/
+.menu {
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+}
+
+header {
+    padding: 10px 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: 2px solid #000000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000000;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    top: 0%;
+}
+
+.dropdown .dropbtn {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    border: 2px solid #000000;
+}
+
+nav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(219, 139, 139);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9c5e5e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 2px solid #000000;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #000000;
+}
+
+.moreLogo {
+    border: 2px solid #000000;
+    position: relative;
+    float: right;
+    margin-top: -2.5%;
+
+}
+
+.moreLogo1 {
+    border: 2px solid #000000;
+    position: relative;
+    float: right;
+    margin-right: 60px;
+    margin-top: -2.5%;
+
+}
+
+.moreLogo2 {
+    border: 2px solid #000000;
+    position: relative;
+    float: right;
+    margin-right: 120px;
+    margin-top: -2.5%;
+
+}
+/*--------------------------*/
+
+/*----------MAIN-----------*/
+.motivationWords {
+    font-size: 25px;
+    position: relative;
+    left: 50%;
+    /*direita*/
+    top: 250px;
+    /*puxar para baixo*/
+    border: 2px solid #000000;
+}
+
+main {
+    /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
+    height: 90vh;
+    background-color: #9c5e5e;
+    background-image: url("https://images.unsplash.com/photo-1459213599465-03ab6a4d5931?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MTAxNTA2MA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+article{
+    height: 90vh;
+    background: rgb(49, 95, 53); 
+    padding: 0 4vw;
+}
+
+.startWords {
+    /* definindo altura e cor */
+    font-size: 1.8rem;
+    border: 2px solid #000000;
+    float: left;
+    margin-top: 70px;
+}
+
+.startImage {
+    /* definindo altura e cor */
+    font-size: 1.8rem;
+    border: 2px solid #000000;
+    float: right;
+    padding: 19% 15%;
+    margin-top: 70px;
+    margin-right: 100px;
+}
+
+
+article.segundo {
+    /* como tem menu e rodapé visíveis (10vh cada), define-se como altura 80vh. */
+    height: 80vh;
+    background-color: rgb(172, 101, 19);
+    background-image: url("https://source.unsplash.com/GB1JI9CLzHs");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    align-items: start;
+}
+/*--------------------------*/
+
+
+
+
+
+
+/*----------FIM-----------*/
+footer {
+    font-size: 1.3rem;
+    font-family: 'Shantell Sans', cursive;
+    height: 4vh;
+    background: #000000;
+    text-align: center;
+    color: white;
+
+}
