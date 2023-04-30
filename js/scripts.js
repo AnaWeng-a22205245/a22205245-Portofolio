@@ -5,6 +5,17 @@ chk.addEventListener('change', () => {
     document.body.classList.toggle('dark');
 })
 
+//----------------------Menu-------------------------
+
+let menuResp = document.querySelector('#menu-icon');
+let nav = document.querySelector('nav');
+
+menuResp.onclick = () => {
+    menuResp.classList.toggle('bx-x');
+    nav.classList.toggle('open');
+}
+
+
 //------------------------------------------------------
 
 window.sr = ScrollReveal({ reset: true });
@@ -38,33 +49,22 @@ function calcular() {
 
 //--------------------Imgaem-Frase-----------------------
 
-const entrada = document.getElementById('campo');
-const saida = document.getElementById('saida');
-
-entrada.addEventListener("input", function(){
-    saida.value = entrada.value;
-});
-
+function mostraTexto() {
+    var inputTextoo = document.getElementById("inputTexto").value;
+    document.getElementById("fraseMostrada").innerHTML = inputTextoo;
+    document.getElementById("fraseMostrada").style.display = "block";
+}
 //--------------------Inserir-nome-----------------------
 
-const txt1 = document.getElementById('tbuser');
-const btn1 = document.getElementById('btn1');
-const out1 = document.getElementById('output1');
-
-function fun1(){
-    out1.innerHTML = txt1.value;
+function mostrarNome () {
+    // Obtém o valor do input com id "nome"
+    const nome = document.getElementById("nome").value;
+    // Exibe o nome em um elemento com id "nome-exibido"
+    document.getElementById("nome-exibido").textContent = nome;
+    document.getElementById("nome1").textContent = nome;
+    document.getElementById("nome2").textContent = nome;
 }
 
-btn1.addEventListener('click',fun1);
-
-function myFunction(){
-    let userInput = document.querySelector("#userInput");
-    let message = document.querySelector("#message");
-
-
-    message.innerHTML = "welcome" + userInput;
-
-}
 
 
 
