@@ -696,6 +696,7 @@ footer {
         font-size: 30px;
     }
 
+    
 
     #botoes {
         position: absolute;
@@ -722,5 +723,20 @@ footer {
     #inicio{
         font-size: 15px;
     }
+
+    
+article {
+    height: 250vh;
+}
+
+.tabelaExercicio{
+    position: absolute;
+    top: 2000px;
+}
+
+.fraseIntroduzida img {
+ height: 300px;
+ width: 350px;
+}
     
 }
