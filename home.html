@@ -66,7 +66,6 @@
 
 
 
-
 	<p>A data de hoje é: <span id="data"></span></p>
 	
 	<script>
@@ -79,6 +78,24 @@
 		// Insere a data formatada no elemento HTML com id "data"
 		document.getElementById("data").innerHTML = dataFormatada;
 	</script>
+
+
+<a href="#" id="meuLink">Clique aqui</a>
+
+<div id="minhasInfos">
+	<p>Algumas informações</p>
+  </div>
+  
+  <script>
+	var meuLink = document.getElementById('meuLink');
+	var minhasInfos = document.getElementById('minhasInfos');
+	
+	meuLink.addEventListener('click', function(event) {
+	  event.preventDefault();
+	  minhasInfos.style.display = 'block';
+	});
+  </script>
+  
 
 </body>
 </html>

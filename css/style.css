@@ -13,9 +13,28 @@ body {
 }
 
 body.dark {
-    background: rgb(7, 25, 43);
+    background: #142727;
     color: aliceblue;
 }
+
+body.dark .container 
+.card 
+.box {
+  background: #393838;
+}
+
+body.dark footer {
+  background:#142727;
+}
+
+body.dark .dropdown .dropbtn a {
+    color: #c5c587;
+  }
+
+  body.dark .logotipo a {
+    color: #c5c587;
+  }
+
 
 .checkbox {
     opacity: 0;
@@ -69,7 +88,7 @@ header {
     position: fixed;
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    background-color: rgba(23, 65, 30, 0.733);
+    background-color:#5c7976;
     color: #b52b2b;
     z-index: 1000;
     align-items: center;
@@ -81,7 +100,8 @@ header {
     text-decoration: none;
     font-size: 30px;
     font-weight: 700;
-    color: #d6ce2a;
+    color: #ebebb3;
+    font-family: 'Skranji', cursive;
 }
 
 .logotipo a:hover,
@@ -102,7 +122,7 @@ header {
     padding: 10px 23px;
     font-size: 25px;
     color: white;
-    background: #056116;
+    background: #58706d;
     border-radius: 30px;
     transition: all .50s ease;
 }
@@ -156,7 +176,7 @@ nav ul li a:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 23px;
 
-    color: #1e5c21;
+    color: #5c7976;
 
     border: none;
     outline: none;
@@ -164,7 +184,8 @@ nav ul li a:hover {
 }
 
 .dropdown .dropbtn a {
-    color: rgb(228, 244, 59);
+    color: #ebebb3;
+    font-size: 20px;
 
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
@@ -184,7 +205,7 @@ nav ul li a:hover {
     display: none;
     position: absolute;
     min-width: 160px;
-    background-color: #1a491b;
+    background-color: #5c7976;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border: 2px solid #000000;
@@ -234,9 +255,11 @@ main {
 }
 
 article {
-    height: 100vh;
+    height: 120vh;
     padding: 0 4vw;
-  background-color: rgb(33, 82, 39);
+  background-color: #5c7976;
+  
+  border: 1px solid #ffffff;
 
 }
 
@@ -245,6 +268,7 @@ article {
     font-size: 1.2rem;
     float: left;
     margin-top: 80px;
+    font-weight: bolder;
 }
 
 .calculadora {
@@ -292,6 +316,12 @@ article.segundo {
 /*
  CSS for the main interaction
 */
+
+.tabelaExercicio{
+    position: absolute;
+    top: 980px;
+}
+
 .tabelaExercicio>input[type="radio"] {
     position: absolute;
     left: -200vw;
@@ -338,13 +368,13 @@ article.segundo {
 /*rato em cima*/
 .tabelaExercicio>label:hover,
 .tabelaExercicio>input:focus+label {
-    color: #06c;
+    color: #c5c587;
 }
 
 .tabelaExercicio>label:hover::after,
 .tabelaExercicio>input:focus+label::after,
 .tabelaExercicio>input:checked+label::after {
-    background: #06c;
+    background: #c5c587;
 }
 
 .tabelaExercicio>input:checked+label {
@@ -477,7 +507,7 @@ footer {
     font-size: 1.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 26vh;
-    background: #c3c2c2;
+    background: #e3e3d1;
     text-align: center;
     color: rgb(58, 58, 58);
 }
@@ -610,7 +640,7 @@ footer {
         right: -100%;
         width: 300px;
         height: 40vh;
-        background:#185c32;
+        background:#5c7976;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -639,10 +669,10 @@ footer {
     nav{
         position: absolute;
         top: 100%;
-        right: -100%;
+        right: 100%;
         width: 300px;
         height: 40vh;
-        background: #133b0f;
+        background: #5c7976;
         display: flex;
         align-items: center;
         flex-direction: column;
