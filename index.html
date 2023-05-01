@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/scripts.js" defer></script>
+    <script src="js/scripts.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -137,6 +137,7 @@
             <input type="radio" id="tabelaImagemFrase" name="tabelaExercicio" aria-controls="imagemFrase">
             <label for="tabelaImagemFrase">Imagem-Frase</label>
 
+
             <div class="tabela-Informacaos">
                 <section id="inserirNome" class="tabela-Informacao">
 
@@ -147,12 +148,13 @@
                         <h4><label for="nome">Enter your name 🫡</label></h4>
                         <br>
                         <input type="text" id="nome" name="nome">
-                        <button type="button" onclick="mostrarNome()">Exibir nome</button>
+                        <button type="button" onclick="mostrarNome()">Mostrar nome</button>
                     </form>
 
                     <br>
 
-                    <p>Seu nome é: <span id="nome-exibido"></span></p>
+                    <p>Hey, <span id="nome-exibido"></span></p>
+
                 </section>
 
 
@@ -219,16 +221,16 @@
                 </section>
 
                 <section id="imagemFrase" class="tabela-Informacao">
-                    <h2><span id="nome2"></span>digite uma frase que para ti quando vês esta imagem</h2>
+                    <h2><span id="nome2"></span> , pensaste em...?</h2>
 
                     <form onsubmit="mostraTexto() ; return false;">
                         <label for="inputTexto"></label>
                         <input type="text" id="inputTexto" name="inputTexto">
-                        <button type="submit">Mostra Frase</button>
+                        <button type="submit">submit</button>
                     </form>
 
                     <div class="fraseIntroduzida">
-                        <img src="https://source.unsplash.com/B4hl1VF2xlg/500x300" alt="imagemfrase" >
+                        <img src="https://source.unsplash.com/x064CHgRqlk/600x400" alt="imagemfrase" >
                         <br>
                         <div id="fraseMostrada" class="fraseMostrada"></div>
                     </div>
